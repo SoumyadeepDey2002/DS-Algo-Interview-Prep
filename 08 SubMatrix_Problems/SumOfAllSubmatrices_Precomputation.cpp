@@ -1,3 +1,5 @@
+//In this solution I printed the sum of all sub matrices the actual question was to print sum pf the sums of all the sub matrices a small difference, logic is same
+
 #include<bits/stdc++.h>
 using namespace std;
 
