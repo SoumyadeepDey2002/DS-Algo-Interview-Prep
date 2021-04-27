@@ -15,7 +15,7 @@ int main()
     char ch = 'A';
     cout<< &ch;
 
-    //However the << is only over loaded for char so if we change the data type explicitly it will work
+    //However the << is only over loaded for char * so if we change the data type explicitly it will work
 
     //Explicit type casting from ch* to void* ,will work for int as well
     cout<<(void *)&ch;
