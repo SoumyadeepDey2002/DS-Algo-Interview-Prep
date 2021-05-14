@@ -22,7 +22,6 @@ bool compare(pair<int,int> c1,pair<int,int> c2){
 int main()
 {
     vector<pair<int,int>> v;
-    v.reserve(1000);
     int n;
     cin>>n;
 
@@ -32,7 +31,7 @@ int main()
         v.push_back(make_pair(x,y));
     }
 
-    sort(v.begin(),v.end()),compare;
+    sort(v.begin(),v.end(),compare);
 
     for(auto p:v){
         cout<<"car "<<p.first<<","<<p.second<<endl;
@@ -44,8 +43,9 @@ int main()
 /*
 
 INPUT - 
-4
+5
 1 2
+3 2
 2 2
 1 0
 0 1
@@ -55,5 +55,6 @@ car 0,1
 car 1,0
 car 1,2
 car 2,2
+car 3,2
 
 */
